@@ -14,7 +14,7 @@ One test = one short line. Do not over-document.
 4. Gemini → ChatGPT: 接住。备注：ChatGPT 能接住 7 次验证进度、V0 边界和下一步记录动作，并发现第 3 次测试来源标注需要统一。
 5. Claude → ChatGPT: 接住 / 部分接住 / 没接住。备注：
 6. ChatGPT/Claude → Codex: 接住。备注：Codex 能从 OCH Snapshot 接住项目阶段、V0 边界和具体执行任务，并直接更新验证日志。
-7. ChatGPT/Claude → Claude Code or Hermes Agent: 接住 / 部分接住 / 没接住。备注：
+7. ChatGPT/Claude → Claude Code or Hermes Agent: 接住。备注：Hermes Agent 能从 OCH Snapshot 接住执行任务边界，只更新验证日志并完成提交。
 
 ## After 7 Tests
 
