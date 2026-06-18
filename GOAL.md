@@ -6,7 +6,7 @@ Make OCH understandable in 30 seconds and usable in 15 minutes by a first-time G
 
 ## Current Phase
 
-First-User Readiness — Phase 0 complete
+First-User Readiness — Phase 1 complete
 
 ## First-User Readiness Progress
 
@@ -17,9 +17,16 @@ First-User Readiness — Phase 0 complete
 - Existing V1 release-readiness history and commits were preserved.
 - No human decision was required to begin the first-visitor audit.
 
+### Phase 1 — First visitor audit
+
+- Created `docs/first-visitor-audit.md`.
+- Confirmed that the README communicates the problem and protocol quickly.
+- Identified entry-point ambiguity, V0/V1 wording noise, fragmented trial navigation, missing first-trial scoring, and missing troubleshooting as the main journey breaks.
+- Identified the README narrative, core principle, protocol specification, and historical V0 evidence as protected project soul.
+
 ### Next Action
 
-Audit the current first-visitor path and create `docs/first-visitor-audit.md`.
+Create the short root-level `START_HERE.md` guide.
 
 ---
 
