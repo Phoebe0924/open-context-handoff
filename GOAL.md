@@ -8,7 +8,7 @@ Release readiness requires clear separation between the narrative, protocol, pro
 
 ## Current Phase
 
-V1 Release Candidate Preparation — Phase 3: Release checklist complete
+V1 Release Candidate Preparation — Phase 4: Release notes draft complete
 
 ## Completed
 
@@ -39,14 +39,16 @@ V1 Release Candidate Preparation — Phase 3: Release checklist complete
 - Summarized the mixed V0 evidence and the bounded V1 Run 001 result without claiming full product validation.
 - Created `RELEASE_CHECKLIST.md`.
 - Recorded completed release checks and remaining human-review items.
+- Created `docs/v1-release-notes.md`.
+- Documented the V0-to-V1 format migration, bounded validation evidence, exclusions, and next review items.
 
 ## In Progress
 
-- Drafting concise and factual V1 release notes.
+- Running the final repository consistency review.
 
 ## Next Action
 
-Create `docs/v1-release-notes.md` without marketing claims or scope expansion.
+Create `docs/v1-final-consistency-check.md` after verifying protected files, protocol fields, aligned materials, historical evidence, and repository scope.
 
 ## Boundaries
 
@@ -91,6 +93,13 @@ Create `docs/v1-release-notes.md` without marketing claims or scope expansion.
 - Confirmed protocol, prompt, example, historical-evidence, and validation readiness checks.
 - Kept README terminology and incomplete V0 evidence as explicit human-review decisions.
 - Reconfirmed that implementation work remains outside the release scope.
+
+### Phase 4 — Release notes draft
+
+- Created `docs/v1-release-notes.md`.
+- Described the five-section V0 to six-field V1 migration.
+- Recorded only the validation evidence actually present.
+- Kept implementation, automation, agents, workflows, and protocol expansion out of scope.
 
 ## V1 Alignment Inventory
 
