@@ -8,7 +8,7 @@ Release readiness requires clear separation between the narrative, protocol, pro
 
 ## Current Phase
 
-V1 Release Candidate Preparation — Phase 2: Validation summary complete
+V1 Release Candidate Preparation — Phase 3: Release checklist complete
 
 ## Completed
 
@@ -37,14 +37,16 @@ V1 Release Candidate Preparation — Phase 2: Validation summary complete
 - Completed the release-readiness inventory in `docs/v1-release-readiness-inventory.md`.
 - Created `tests/v1-validation-summary.md`.
 - Summarized the mixed V0 evidence and the bounded V1 Run 001 result without claiming full product validation.
+- Created `RELEASE_CHECKLIST.md`.
+- Recorded completed release checks and remaining human-review items.
 
 ## In Progress
 
-- Preparing the V1 release checklist.
+- Drafting concise and factual V1 release notes.
 
 ## Next Action
 
-Create `RELEASE_CHECKLIST.md` with explicit completed checks and remaining human-review items.
+Create `docs/v1-release-notes.md` without marketing claims or scope expansion.
 
 ## Boundaries
 
@@ -82,6 +84,13 @@ Create `RELEASE_CHECKLIST.md` with explicit completed checks and remaining human
 - Recorded that V0 evidence is useful but incomplete.
 - Summarized V1 Run 001 across DeepSeek, Claude, and Gemini.
 - Limited the conclusion to the bounded manual scenario actually tested.
+
+### Phase 3 — Release checklist
+
+- Created `RELEASE_CHECKLIST.md`.
+- Confirmed protocol, prompt, example, historical-evidence, and validation readiness checks.
+- Kept README terminology and incomplete V0 evidence as explicit human-review decisions.
+- Reconfirmed that implementation work remains outside the release scope.
 
 ## V1 Alignment Inventory
 
