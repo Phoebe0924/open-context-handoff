@@ -6,7 +6,7 @@ Make OCH understandable in 30 seconds and usable in 15 minutes by a first-time G
 
 ## Current Phase
 
-First-User Readiness — Phase 2 complete
+First-User Readiness — Phase 3 complete
 
 ## First-User Readiness Progress
 
@@ -31,9 +31,16 @@ First-User Readiness — Phase 2 complete
 - Linked directly to the existing generator and receiver prompts.
 - Kept human review explicit and avoided adding new protocol claims.
 
+### Phase 3 — 15-minute trial
+
+- Created `docs/15-minute-trial.md`.
+- Added prerequisites, minute-by-minute trial steps, preparation boundaries, observable success and failure signs, and bounded scoring.
+- Defined PASS, PARTIAL, and FAIL as results for one handoff only.
+- Explicitly prevented full-transcript handoffs, premature coaching, protocol redesign from one result, and overclaiming validation.
+
 ### Next Action
 
-Create the exact 15-minute trial and scoring guide.
+Create the reusable first-user trial result template.
 
 ---
 
