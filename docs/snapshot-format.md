@@ -1,6 +1,6 @@
-# OCH Snapshot Format
+# OCH Context Snapshot Format
 
-An OCH Snapshot is a small, human-reviewed handoff artifact. It preserves only the anchors needed to continue useful work in another AI window.
+An OCH Context Snapshot is a small, human-reviewed handoff artifact. It preserves only the anchors needed to continue useful work in another AI window.
 
 ```markdown
 ## OCH Snapshot

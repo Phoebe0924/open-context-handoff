@@ -2,7 +2,7 @@
 
 ## Test
 
-ChatGPT → Claude handoff using OCH Snapshot.
+ChatGPT → Claude handoff using an OCH Context Snapshot.
 
 ## Did it reduce repeated explanation?
 
@@ -24,7 +24,7 @@ TBD
 
 TBD
 
-## Should the Snapshot format change?
+## Should the Context Snapshot format change?
 
 TBD
 

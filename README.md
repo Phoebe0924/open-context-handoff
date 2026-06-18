@@ -93,6 +93,17 @@ No re-explaining.
 
 ---
 
+## Start here
+
+- [Run the manual V0 quickstart](docs/quickstart.md)
+- [Review the Context Snapshot format](docs/snapshot-format.md)
+- [Generate a Context Snapshot](prompts/snapshot_generator_prompt.md)
+- [Prepare the receiving AI window](prompts/receiver_prompt.md)
+- [See a minimal example](examples/minimal-snapshot.md)
+- [Record a manual test](tests/test-template.md)
+
+---
+
 ## How it works (V0)
 
 1. End a session while thinking is still coherent  

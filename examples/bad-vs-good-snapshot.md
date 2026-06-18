@@ -1,4 +1,4 @@
-# Bad vs. Good OCH Snapshot
+# Bad vs. Good OCH Context Snapshot
 
 ## Bad
 

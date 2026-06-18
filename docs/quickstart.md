@@ -1,6 +1,6 @@
 # OCH V0 Quickstart
 
-OCH V0 tests one question:
+OCH V0 is a manual-first, documentation-first protocol that tests one question:
 
 > Can a small, human-approved Context Snapshot reduce repeated explanation when switching between AI windows?
 
@@ -33,7 +33,7 @@ No software or automation is required.
 
 5. **Paste the receiver prompt and snapshot**
 
-   Paste [`prompts/receiver_prompt.md`](../prompts/receiver_prompt.md), followed by the reviewed Context Snapshot.
+   Paste [`prompts/receiver_prompt.md`](../prompts/receiver_prompt.md), followed by the human-reviewed Context Snapshot.
 
 6. **Continue from NEXT ACTION**
 
@@ -44,3 +44,5 @@ No software or automation is required.
    Copy [`tests/test-template.md`](../tests/test-template.md) into a new test result file. Record whether OCH reduced repeated explanation and whether the receiving AI continued from NEXT ACTION.
 
 The test succeeds when the new AI window can continue useful work with less repeated explanation. Perfect recovery of the original conversation is not required.
+
+For repository navigation and V0 boundaries, see the [repository map](repo-map.md), [V0 scope](v0-scope.md), and [V0 validation plan](v0-validation-plan.md).

@@ -1,4 +1,4 @@
-# Minimal OCH Snapshot
+# Minimal OCH Context Snapshot
 
 ## OCH Snapshot
 

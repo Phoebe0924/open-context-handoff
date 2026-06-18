@@ -1,4 +1,4 @@
-# OCH Snapshot Test 001
+# OCH Context Snapshot Test 001
 
 ## Source
 
@@ -10,7 +10,7 @@ Claude new window
 
 ## Scenario
 
-Testing whether OCH can reduce context re-explaining when switching from ChatGPT to Claude.
+Testing whether an OCH Context Snapshot can reduce repeated explanation when switching from ChatGPT to Claude.
 
 ## OCH Snapshot
 
@@ -32,7 +32,7 @@ Current:
 
 ### HARD DECISIONS
 
-- V0 does not build Chrome plugin, CLI, MCP, or automation yet.
+- V0 does not build a browser extension, CLI, MCP server, or automation.
 - V0 only validates whether a simple Snapshot reduces repeated explanation.
 - README is already published; stop polishing for now.
 - OCH is about context ownership and continuity of thought.
@@ -40,7 +40,7 @@ Current:
 
 ### NEXT ACTION
 
-Use this Snapshot in Claude and check whether Claude can continue without asking for the full background again.
+- Use this Context Snapshot in Claude and check whether Claude can continue without asking for the full background again.
 
 ### CONTEXT NOTES
 

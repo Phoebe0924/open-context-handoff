@@ -1,6 +1,6 @@
 # OCH Receiver Prompt
 
-You are receiving an OCH Snapshot.
+You are receiving an OCH Context Snapshot.
 
 Rules:
 

@@ -1,7 +1,7 @@
 # OCH Snapshot Generator Prompt
 
 ```text
-Create an OCH Context Snapshot for handing this work to a new AI window.
+Create a Context Snapshot using the OCH format for handing this work to a new AI window.
 
 Do not summarize the whole conversation. Extract only the recoverable anchors needed to continue useful work.
 

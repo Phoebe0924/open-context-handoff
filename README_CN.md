@@ -81,9 +81,20 @@ OCH 会帮你把当前对话压缩成一份 **上下文快照（Context Snapshot
 
 ---
 
+## 开始使用
+
+- [按 V0 快速指南完成一次手动测试](docs/quickstart.md)
+- [查看 Context Snapshot 格式](docs/snapshot-format.md)
+- [生成 Context Snapshot](prompts/snapshot_generator_prompt.md)
+- [准备接收端 AI 窗口](prompts/receiver_prompt.md)
+- [查看最小示例](examples/minimal-snapshot.md)
+- [记录测试结果](tests/test-template.md)
+
+---
+
 ## ⚙️ 怎么用（V0）
 
-1. 对话快结束时生成 Snapshot  
+1. 对话快结束时生成 Context Snapshot
 2. 花 5 秒确认内容有没有问题  
 3. 复制到新窗口  
 4. 从 NEXT ACTION 继续  
@@ -96,7 +107,7 @@ OCH 会帮你把当前对话压缩成一份 **上下文快照（Context Snapshot
 
 ---
 
-## 🧩 Snapshot 包含什么
+## 🧩 Context Snapshot 包含什么
 
 ```markdown
 ## OCH Snapshot
