@@ -1,6 +1,6 @@
-# OCH V0 Quickstart
+# OCH Snapshot v1 Quickstart
 
-OCH V0 is a manual-first, documentation-first protocol that tests one question:
+OCH is a manual-first, documentation-first protocol that tests one question:
 
 > Can a small, human-approved Context Snapshot reduce repeated explanation when switching between AI windows?
 
@@ -37,9 +37,9 @@ Do not generate one merely because a conversation is long. Generate it when usef
 
    Ask the source AI to respond. Then review the draft before it leaves the source window. Confirm that it:
 
-   - states the real goal and current stopping point
-   - preserves only settled decisions
-   - contains only anchors needed to resume
+   - uses exactly the six V1 fields in the required order
+   - states the current task and current state
+   - separates completed work, settled decisions, and hard constraints
    - does not invent missing context
    - gives exactly one concrete NEXT ACTION
 
@@ -71,7 +71,8 @@ A test is useful evidence, not a demonstration that must succeed.
 OCH worked well if the receiving AI:
 
 - understood the task and current state
-- respected HARD DECISIONS
+- preserved DECISIONS
+- preserved CONSTRAINTS
 - started the single NEXT ACTION
 - required less repeated explanation than a normal fresh-window handoff
 
@@ -81,4 +82,4 @@ Record **Partly** or **No** if it reopened settled decisions, followed the wrong
 
 Save the reviewed Snapshot and completed result record. Identify the smallest missing or misleading anchor before proposing a format change; do not respond to one failed test by adding software, automation, or a larger context dump.
 
-For examples and boundaries, see the [minimal Snapshot](../examples/minimal-snapshot.md), [bad vs. good comparison](../examples/bad-vs-good-snapshot.md), [Snapshot format](snapshot-format.md), [V0 scope](v0-scope.md), and [validation plan](v0-validation-plan.md).
+For the active format and examples, see the [Snapshot v1 specification](snapshot-format.md), [minimal Snapshot](../examples/minimal-snapshot.md), and [bad vs. good comparison](../examples/bad-vs-good-snapshot.md). Historical V0 boundaries and evidence remain available in the [V0 scope](v0-scope.md) and [V0 validation plan](v0-validation-plan.md).

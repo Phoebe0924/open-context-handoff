@@ -1,5 +1,7 @@
 # OCH Test Result 002: ChatGPT → Claude
 
+> Legacy V0 validation record. Its terminology matches the Snapshot format used for that test.
+
 Date: 2026-06-18
 Tester: Phoebe
 Test type: Manual handoff, no automation

@@ -1,5 +1,7 @@
 # OCH Context Snapshot Test 001
 
+> Legacy V0 validation artifact. It preserves the format used during the original test and is not a V1 template.
+
 ## Source
 
 ChatGPT current window

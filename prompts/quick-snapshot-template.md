@@ -1,27 +1,25 @@
-# Quick Snapshot Template
+# Quick OCH Snapshot v1 Template
 
-## OCH Snapshot
+### WHAT WE ARE DOING
 
-Generated:
-Session:
+[One sentence describing the current task.]
 
-### WHAT WE'RE DOING
+### CURRENT STATE
 
-### WHERE WE ARE
+[Concise current phase or status.]
 
-Done:
-Current:
+### COMPLETED
 
-### HARD DECISIONS
+- None.
 
--
+### DECISIONS
+
+- None.
+
+### CONSTRAINTS
+
+- None.
 
 ### NEXT ACTION
 
--
-
-### CONTEXT NOTES
-
--
-
-Keep it short. If uncertain, omit.
+[Exactly one concrete, observable action.]

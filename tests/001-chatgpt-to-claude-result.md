@@ -1,5 +1,7 @@
 # Test 001 Result
 
+> Legacy V0 validation record. Its terminology matches the Snapshot format used for that test.
+
 ## Test
 
 ChatGPT → Claude handoff using an OCH Context Snapshot.

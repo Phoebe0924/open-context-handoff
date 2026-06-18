@@ -1,47 +1,40 @@
-# OCH V0 Repository Map
+# OCH Repository Map
 
-OCH V0 is a manual-first, documentation-first protocol. A first-time user should begin with [`quickstart.md`](quickstart.md) and follow one complete handoff test.
+OCH is organized into separate narrative, protocol, prompt, example, and validation layers. A first-time user should begin with [`quickstart.md`](quickstart.md) and follow one complete manual handoff.
 
-## Root files
+## Narrative layer
 
 - [`README.md`](../README.md): English overview of OCH and its purpose.
 - [`README_CN.md`](../README_CN.md): Chinese overview of OCH and its purpose.
 
-## `docs/`
+## Protocol layer
 
-Guidance for understanding and validating V0:
+- [`snapshot-format.md`](snapshot-format.md): canonical OCH Snapshot v1 specification.
 
-- [`quickstart.md`](quickstart.md): first file to open; runs one manual Context Snapshot handoff.
-- [`snapshot-format.md`](snapshot-format.md): defines the Context Snapshot structure and safeguards.
-- [`repo-map.md`](repo-map.md): explains how to navigate the repository.
-- [`v0-scope.md`](v0-scope.md): states what V0 includes and excludes.
-- [`v0-validation-plan.md`](v0-validation-plan.md): defines the three manual validation tests.
-- [`audit-notes.md`](audit-notes.md): records this documentation audit and the next evidence to gather.
-- [`future-direction.md`](future-direction.md): captures later research directions without adding them to V0.
+## Prompt layer
 
-## `prompts/`
+- [`snapshot_generator_prompt.md`](../prompts/snapshot_generator_prompt.md): asks the source AI to draft a six-field V1 Snapshot.
+- [`receiver_prompt.md`](../prompts/receiver_prompt.md): tells the receiving AI to preserve decisions and constraints and continue from one next action.
+- [`quick-snapshot-template.md`](../prompts/quick-snapshot-template.md): compact V1 template.
+- [`quick-receiver-prompt.md`](../prompts/quick-receiver-prompt.md): compact V1 receiver instruction.
 
-Prompts used in a manual handoff:
+## Example layer
 
-- [`snapshot_generator_prompt.md`](../prompts/snapshot_generator_prompt.md): asks the source AI to draft a Context Snapshot.
-- [`receiver_prompt.md`](../prompts/receiver_prompt.md): tells the target AI how to use the reviewed Context Snapshot.
+- [`minimal-snapshot.md`](../examples/minimal-snapshot.md): compact valid V1 Snapshot.
+- [`bad-vs-good-snapshot.md`](../examples/bad-vs-good-snapshot.md): V1 conformance comparison.
 
-## `examples/`
+## Validation layer
 
-Reference examples:
+- [`v1-spec-conformance-test.md`](../tests/v1-spec-conformance-test.md): V1 manual conformance design.
+- [`v1-validation-run-001.md`](../tests/v1-validation-run-001.md): first V1 validation run record awaiting manual completion.
+- [`test-template.md`](../tests/test-template.md): reusable V1 result template.
+- [`7-run-validation-log.md`](../tests/7-run-validation-log.md): preserved V0 cross-system evidence.
+- [`001-chatgpt-to-claude-result.md`](../tests/001-chatgpt-to-claude-result.md) and [`002-chatgpt-to-claude-result.md`](../tests/002-chatgpt-to-claude-result.md): preserved V0 result records.
+- [`001-chatgpt-to-claude.md`](../snapshots/001-chatgpt-to-claude.md): preserved V0 Snapshot artifact.
 
-- [`minimal-snapshot.md`](../examples/minimal-snapshot.md): a compact, valid Context Snapshot.
-- [`bad-vs-good-snapshot.md`](../examples/bad-vs-good-snapshot.md): shows common problems and an improved version.
+## Guidance and historical records
 
-## `snapshots/`
-
-Human-reviewed Context Snapshots used in specific manual tests:
-
-- [`001-chatgpt-to-claude.md`](../snapshots/001-chatgpt-to-claude.md): the first ChatGPT-to-Claude test artifact.
-
-## `tests/`
-
-Manual test records:
-
-- [`test-template.md`](../tests/test-template.md): copy this file for each new test.
-- [`001-chatgpt-to-claude-result.md`](../tests/001-chatgpt-to-claude-result.md): result record for the first test.
+- [`quickstart.md`](quickstart.md): current V1 manual flow.
+- [`v0-scope.md`](v0-scope.md), [`v0-validation-plan.md`](v0-validation-plan.md), and [`audit-notes.md`](audit-notes.md): historical V0 scope and validation guidance.
+- [`v1-release-gap.md`](v1-release-gap.md) and [`v1-alignment-report.md`](v1-alignment-report.md): V1 release-readiness records.
+- [`future-direction.md`](future-direction.md): deferred research directions, not current commitments.

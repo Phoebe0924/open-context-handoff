@@ -1,4 +1,4 @@
-# OCH Test Result
+# OCH Snapshot v1 Test Result
 
 ## Source
 
@@ -30,9 +30,13 @@
 
 [Yes / Partly / No, with a brief reason]
 
-## Did it respect HARD DECISIONS?
+## Did it preserve DECISIONS?
 
-[Yes / Partly / No, with any decision it reopened or violated]
+[Yes / Partly / No, with any decision it reopened or silently reversed]
+
+## Did it preserve CONSTRAINTS?
+
+[Yes / Partly / No, with any hard limit or rule it violated]
 
 ## Clarification required
 
