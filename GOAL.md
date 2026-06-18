@@ -1,4 +1,29 @@
-# OCH V1 Release Readiness Goal
+# OCH First-User Readiness Goal
+
+## Current Product Goal
+
+Make OCH understandable in 30 seconds and usable in 15 minutes by a first-time GitHub visitor, while preserving OCH as a context handoff protocol and leaving the protected narrative and protocol source unchanged except for a minimal README entry link if needed.
+
+## Current Phase
+
+First-User Readiness — Phase 0 complete
+
+## First-User Readiness Progress
+
+### Phase 0 — Preflight
+
+- Worktree was clean.
+- Local `main` matched `origin/main` with no commits ahead or behind.
+- Existing V1 release-readiness history and commits were preserved.
+- No human decision was required to begin the first-visitor audit.
+
+### Next Action
+
+Audit the current first-visitor path and create `docs/first-visitor-audit.md`.
+
+---
+
+# Previous Goal — OCH V1 Release Readiness
 
 ## Final Goal
 
@@ -6,7 +31,7 @@ Move OCH from a validated V0 experiment into a clean V1 release-ready GitHub pro
 
 Release readiness requires clear separation between the narrative, protocol, prompt, example, and validation layers.
 
-## Current Phase
+## Previous Final Phase
 
 V1 Release Candidate Preparation — Phase 5: Complete, stopped for human review
 
