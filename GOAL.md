@@ -6,7 +6,7 @@ Make OCH understandable in 30 seconds and usable in 15 minutes by a first-time G
 
 ## Current Phase
 
-First-User Readiness — Phase 3 complete
+First-User Readiness — Phase 4 complete
 
 ## First-User Readiness Progress
 
@@ -38,9 +38,15 @@ First-User Readiness — Phase 3 complete
 - Defined PASS, PARTIAL, and FAIL as results for one handoff only.
 - Explicitly prevented full-transcript handoffs, premature coaching, protocol redesign from one result, and overclaiming validation.
 
+### Phase 4 — User trial result template
+
+- Created `tests/user-trial-result-template.md`.
+- Included the required trial metadata, reviewed Snapshot, receiving AI response, evaluation checklist, PASS / PARTIAL / FAIL result, and notes.
+- Kept the result explicitly scoped to one manual handoff.
+
 ### Next Action
 
-Create the reusable first-user trial result template.
+Create the common-failure troubleshooting guide.
 
 ---
 
