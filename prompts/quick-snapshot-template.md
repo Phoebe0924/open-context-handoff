@@ -1,23 +1,27 @@
 # Quick Snapshot Template
 
-```markdown
-## OCH Snapshot v1
+## OCH Snapshot
 
-WHAT WE ARE DOING:
+Generated:
+Session:
 
-CURRENT STATE:
+### WHAT WE'RE DOING
 
-COMPLETED:
+### WHERE WE ARE
+
+Done:
+Current:
+
+### HARD DECISIONS
+
 -
 
-DECISIONS:
+### NEXT ACTION
+
 -
 
-CONSTRAINTS:
+### CONTEXT NOTES
+
 -
 
-NEXT ACTION:
--
-```
-
-Use every field exactly once. NEXT ACTION must contain one executable step.
+Keep it short. If uncertain, omit.

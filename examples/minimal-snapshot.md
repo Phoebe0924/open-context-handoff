@@ -1,25 +1,31 @@
-# Minimal OCH Snapshot v1
+# Minimal OCH Context Snapshot
 
-```markdown
-## OCH Snapshot v1
+This Snapshot contains only the anchors needed for a new AI window to draft the next artifact without hearing the project history.
 
-WHAT WE ARE DOING:
-Prepare a one-page community garden proposal.
+## OCH Snapshot
 
-CURRENT STATE:
-The outline is complete; the opening paragraph is missing.
+### WHAT WE'RE DOING
 
-COMPLETED:
-- Confirmed the audience and one-page limit.
+We are preparing a short project proposal for a community garden.
 
-DECISIONS:
-- Focus on neighborhood food access.
+### WHERE WE ARE
 
-CONSTRAINTS:
-- Exclude event programming.
+Done:
+- Agreed on the audience and one-page limit.
 
-NEXT ACTION:
-- Draft a 100-word opening paragraph from the outline.
-```
+Current:
+- The proposal has an outline but no opening paragraph.
 
-The receiver can execute NEXT ACTION without hearing the earlier discussion about audience, length, focus, or rejected event ideas.
+### HARD DECISIONS
+
+- The proposal will focus on neighborhood food access, not event programming.
+
+### NEXT ACTION
+
+- Draft a 100-word opening paragraph from the existing outline.
+
+### CONTEXT NOTES
+
+- The proposal will be reviewed by the neighborhood association.
+
+With this Snapshot, the receiver does not need the earlier discussion about possible audiences, document length, or event programming. It can begin the opening paragraph immediately.

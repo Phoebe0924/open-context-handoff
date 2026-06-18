@@ -23,13 +23,13 @@ TBD — record Claude's first response before adding context.
 
 TBD — Yes / Partly / No, including what still had to be repeated.
 
-## Did Claude execute NEXT ACTION?
+## Did Claude continue from NEXT ACTION?
 
 TBD — Yes / Partly / No, with evidence.
 
-## Did Claude respect DECISIONS and CONSTRAINTS?
+## Did Claude respect HARD DECISIONS?
 
-TBD — record any decision it reopened or constraint it violated.
+TBD — record any excluded direction it reopened.
 
 ## Clarification required
 

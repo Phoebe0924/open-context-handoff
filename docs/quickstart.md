@@ -27,7 +27,7 @@ Do not generate one merely because a conversation is long. Generate it when usef
 
 1. **Work in your current AI window**
 
-   Use a real, bounded task. Stop when the task, current state, completed work, decisions, constraints, and next action are clear enough to hand off.
+   Use a real, bounded task. Stop at a point where the goal, confirmed decisions, current state, and next action are clear enough to hand off.
 
 2. **Copy the generator prompt**
 
@@ -37,11 +37,11 @@ Do not generate one merely because a conversation is long. Generate it when usef
 
    Ask the source AI to respond. Then review the draft before it leaves the source window. Confirm that it:
 
-   - uses every OCH Snapshot v1 field exactly once
-   - preserves only immutable decisions and hard constraints
-   - contains only verified anchors needed to resume
+   - states the real goal and current stopping point
+   - preserves only settled decisions
+   - contains only anchors needed to resume
    - does not invent missing context
-   - gives exactly one executable NEXT ACTION
+   - gives exactly one concrete NEXT ACTION
 
    Correct or remove anything inaccurate, uncertain, private, or unnecessary. The reviewed version—not the AI's first draft—is the handoff artifact.
 
@@ -58,11 +58,11 @@ Do not generate one merely because a conversation is long. Generate it when usef
 
 6. **Observe the first response**
 
-   Let the receiving AI execute NEXT ACTION. Do not add the old conversation history unless the receiver identifies one specific missing fact.
+   Let the receiving AI continue from NEXT ACTION. Do not add the old conversation history unless the receiver identifies a specific missing fact.
 
 7. **Record what happened**
 
-   Copy [`tests/test-template.md`](../tests/test-template.md) into a new result file. Record the first response, any clarification required, whether DECISIONS and CONSTRAINTS were respected, and whether you had to repeat information outside the Snapshot.
+   Copy [`tests/test-template.md`](../tests/test-template.md) into a new result file. Record the first response, any clarification required, whether settled decisions were respected, and whether you had to repeat information outside the Snapshot.
 
 ## How to judge success
 
@@ -71,8 +71,8 @@ A test is useful evidence, not a demonstration that must succeed.
 OCH worked well if the receiving AI:
 
 - understood the task and current state
-- respected DECISIONS and CONSTRAINTS
-- executed the single NEXT ACTION
+- respected HARD DECISIONS
+- started the single NEXT ACTION
 - required less repeated explanation than a normal fresh-window handoff
 
 Record **Partly** or **No** if it reopened settled decisions, followed the wrong action, needed broad background again, or produced unusable work. Perfect recovery of the full source conversation is neither expected nor desired.

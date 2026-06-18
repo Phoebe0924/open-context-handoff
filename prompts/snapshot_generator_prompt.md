@@ -1,43 +1,49 @@
 # OCH Snapshot Generator Prompt
 
-Copy the text inside this block into the source AI window.
+Copy the text inside this block into the current/source AI window.
 
 ```text
-Create an OCH Snapshot v1 for handing this work to another AI system.
+Draft an OCH Context Snapshot for handing this work to a new AI window.
 
-Preserve only verified anchors required to continue. Do not summarize the conversation, invent missing information, or add fields.
+Extract only recoverable anchors needed to resume. Do not summarize the conversation chronologically or preserve every idea.
 
 Rules:
-- Use every field exactly once and in the specified order.
-- WHAT WE ARE DOING: one sentence only.
-- CURRENT STATE: current phase, status, or stopping point.
-- COMPLETED: bullet list of finished relevant work.
-- DECISIONS: bullet list of immutable decisions.
-- CONSTRAINTS: bullet list of hard constraints.
-- NEXT ACTION: exactly one concrete, executable step with an observable result.
-- Do not put planning, alternatives, abstract thinking, or multiple steps in NEXT ACTION.
-- Use "- None." for an empty COMPLETED, DECISIONS, or CONSTRAINTS list.
-- Output only the Snapshot.
+- Preserve verified goals, relevant completed work, the current stopping point, and confirmed decisions.
+- Include a rejected direction only if it prevents likely rework.
+- Do not invent or resolve uncertainty. Omit doubtful details.
+- WHAT WE'RE DOING must be 1–2 sentences.
+- WHERE WE ARE must use Done and Current.
+- HARD DECISIONS must contain settled decisions only.
+- NEXT ACTION must be exactly one concrete, executable action.
+- CONTEXT NOTES must contain only minimal supporting background.
+- Keep the total under 300 words.
+- Output only the Markdown Snapshot.
 
-Use exactly this format:
+Use exactly this structure:
 
-## OCH Snapshot v1
+## OCH Snapshot
 
-WHAT WE ARE DOING:
-[One sentence.]
+### WHAT WE'RE DOING
 
-CURRENT STATE:
-[Current phase or status.]
+[1–2 sentences]
 
-COMPLETED:
-- [Completed item.]
+### WHERE WE ARE
 
-DECISIONS:
-- [Immutable decision.]
+Done:
+- [Relevant completed work]
 
-CONSTRAINTS:
-- [Hard constraint.]
+Current:
+- [Current state or stopping point]
 
-NEXT ACTION:
-- [Exactly one executable step.]
+### HARD DECISIONS
+
+- [Settled decision]
+
+### NEXT ACTION
+
+- [One concrete action]
+
+### CONTEXT NOTES
+
+- [Minimal background]
 ```

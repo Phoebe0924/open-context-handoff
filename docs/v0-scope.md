@@ -19,4 +19,4 @@ OCH V0 is intentionally manual-first and documentation-first. It tests whether a
 - memory system
 - agent workflow
 
-These exclusions are fixed V0 constraints. They should not be reopened during a manual test. OCH V0 validates the protocol before considering any implementation beyond documentation.
+These exclusions are HARD DECISIONS for V0. They should not be reopened during a manual test. OCH V0 validates the protocol before considering any implementation beyond documentation.
