@@ -107,6 +107,14 @@ Before testing, you can also review the stricter [Context Snapshot format](docs/
 
 ---
 
+## Quick manual testing
+
+- [Quick receiver prompt](prompts/quick-receiver-prompt.md)
+- [Quick Snapshot template](prompts/quick-snapshot-template.md)
+- [7-run validation log](tests/7-run-validation-log.md)
+
+---
+
 ## How it works (V0)
 
 1. End a session while thinking is still coherent  
