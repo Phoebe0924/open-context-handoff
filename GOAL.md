@@ -8,7 +8,7 @@ Release readiness requires clear separation between the narrative, protocol, pro
 
 ## Current Phase
 
-V1 Alignment Pass — Phase 5: Complete, stopped for human review
+V1 Release Candidate Preparation — Phase 1: Release readiness inventory complete
 
 ## Completed
 
@@ -32,14 +32,17 @@ V1 Alignment Pass — Phase 5: Complete, stopped for human review
 - Verified that active aligned materials contain no old Snapshot field names.
 - Verified that README files were untouched during the alignment pass.
 - Preserved `docs/snapshot-format.md` as the protocol source of truth.
+- Completed V1 Manual Validation Run 001 across DeepSeek, Claude, and Gemini.
+- Recorded V1 Manual Validation Run 001 as PASS within its stated scope.
+- Completed the release-readiness inventory in `docs/v1-release-readiness-inventory.md`.
 
 ## In Progress
 
-- Awaiting human review and the first manual cross-AI V1 run.
+- Preparing the factual V0 and V1 validation summary.
 
 ## Next Action
 
-Run `tests/v1-validation-run-001.md` manually in another AI system and record the result.
+Create `tests/v1-validation-summary.md` without claiming broader product validation.
 
 ## Boundaries
 
@@ -52,9 +55,24 @@ Run `tests/v1-validation-run-001.md` manually in another AI system and record th
 
 ## Stop Conditions
 
-- Stop after `docs/v1-alignment-report.md` is created and alignment is verified.
+- Stop after the V1 release-candidate consistency check is created and verified.
 - Stop before any CLI, code, dependency, automation, agent, workflow, or protocol redesign work.
 - Stop and request human review if a change would alter historical evidence or project positioning.
+
+## V1 Release Candidate Preparation
+
+### Phase 0 — Preflight
+
+- Worktree was clean.
+- V1 Manual Validation Run 001 was already committed.
+- Local `main` matched `origin/main`.
+
+### Phase 1 — Release readiness inventory
+
+- Read the narrative, protocol, prompt, example, validation, historical, and goal layers.
+- Created `docs/v1-release-readiness-inventory.md`.
+- Identified stale release-status references and README-era V0 terminology as human-review risks.
+- Preserved all historical V0 evidence without rewriting it as V1.
 
 ## V1 Alignment Inventory
 
