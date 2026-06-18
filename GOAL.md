@@ -6,7 +6,7 @@ Make OCH understandable in 30 seconds and usable in 15 minutes by a first-time G
 
 ## Current Phase
 
-First-User Readiness — Phase 4 complete
+First-User Readiness — Phase 5 complete
 
 ## First-User Readiness Progress
 
@@ -44,9 +44,15 @@ First-User Readiness — Phase 4 complete
 - Included the required trial metadata, reviewed Snapshot, receiving AI response, evaluation checklist, PASS / PARTIAL / FAIL result, and notes.
 - Kept the result explicitly scoped to one manual handoff.
 
+### Phase 5 — Troubleshooting
+
+- Created `docs/troubleshooting.md`.
+- Covered all six required first-trial failure patterns with a symptom, likely cause, and smallest practical fix.
+- Kept recovery focused on better anchors, a bounded task, and correct trial procedure rather than more context or new systems.
+
 ### Next Action
 
-Create the common-failure troubleshooting guide.
+Decide whether the README needs one minimal link to the new start guide.
 
 ---
 
