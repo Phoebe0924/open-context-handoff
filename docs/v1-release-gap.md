@@ -14,13 +14,14 @@ This analysis identifies the smallest remaining documentation work for a coheren
 
 ## 2. What is missing?
 
-### Release-blocking alignment
+### Release-candidate review
 
-- The first V1 validation run has no manually recorded receiving-AI result.
+- Human review of `RELEASE_CHECKLIST.md`, the release-notes draft, and the final consistency check.
+- A decision about whether protected README-era V0 terminology is acceptable for the V1 release candidate.
 
-### Release navigation
+### Additional evidence
 
-- The README files intentionally retain their original narrative and still contain V0-era navigation or terminology.
+- V1 Run 001 is complete, but additional manual runs would be needed to evaluate longer, ambiguous, multi-topic, or execution-heavy handoffs.
 
 ## 3. What is unclear?
 
@@ -42,6 +43,6 @@ These points require human review because they affect release presentation and h
 
 ## 5. What is the next smallest safe action?
 
-Run `tests/v1-validation-run-001.md` manually in another AI system and record the result.
+Review `RELEASE_CHECKLIST.md`, `docs/v1-release-notes.md`, and `docs/v1-final-consistency-check.md` together.
 
-This is the smallest safe action because the active prompts, templates, examples, quickstart, and repository map are now aligned with the six-field V1 specification. A real receiving-AI response is the remaining evidence needed to validate that alignment.
+This is the smallest safe action because the protocol alignment and first bounded V1 validation run are complete. The remaining decisions concern release presentation, preservation of incomplete historical evidence, and whether more validation is required before release-candidate designation.

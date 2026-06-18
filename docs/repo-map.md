@@ -26,7 +26,8 @@ OCH is organized into separate narrative, protocol, prompt, example, and validat
 ## Validation layer
 
 - [`v1-spec-conformance-test.md`](../tests/v1-spec-conformance-test.md): V1 manual conformance design.
-- [`v1-validation-run-001.md`](../tests/v1-validation-run-001.md): first V1 validation run record awaiting manual completion.
+- [`v1-validation-run-001.md`](../tests/v1-validation-run-001.md): completed first V1 cross-AI validation run.
+- [`v1-validation-summary.md`](../tests/v1-validation-summary.md): factual summary of V0 evidence and V1 Run 001.
 - [`test-template.md`](../tests/test-template.md): reusable V1 result template.
 - [`7-run-validation-log.md`](../tests/7-run-validation-log.md): preserved V0 cross-system evidence.
 - [`001-chatgpt-to-claude-result.md`](../tests/001-chatgpt-to-claude-result.md) and [`002-chatgpt-to-claude-result.md`](../tests/002-chatgpt-to-claude-result.md): preserved V0 result records.
@@ -36,5 +37,9 @@ OCH is organized into separate narrative, protocol, prompt, example, and validat
 
 - [`quickstart.md`](quickstart.md): current V1 manual flow.
 - [`v0-scope.md`](v0-scope.md), [`v0-validation-plan.md`](v0-validation-plan.md), and [`audit-notes.md`](audit-notes.md): historical V0 scope and validation guidance.
-- [`v1-release-gap.md`](v1-release-gap.md) and [`v1-alignment-report.md`](v1-alignment-report.md): V1 release-readiness records.
+- [`v1-release-readiness-inventory.md`](v1-release-readiness-inventory.md): layer-by-layer release-candidate inventory.
+- [`v1-release-notes.md`](v1-release-notes.md): factual V1 release-notes draft.
+- [`v1-final-consistency-check.md`](v1-final-consistency-check.md): final release-candidate consistency results.
+- [`v1-release-gap.md`](v1-release-gap.md) and [`v1-alignment-report.md`](v1-alignment-report.md): earlier V1 release-readiness records.
+- [`RELEASE_CHECKLIST.md`](../RELEASE_CHECKLIST.md): human release-candidate review checklist.
 - [`future-direction.md`](future-direction.md): deferred research directions, not current commitments.

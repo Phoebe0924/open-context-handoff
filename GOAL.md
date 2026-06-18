@@ -8,7 +8,7 @@ Release readiness requires clear separation between the narrative, protocol, pro
 
 ## Current Phase
 
-V1 Release Candidate Preparation — Phase 4: Release notes draft complete
+V1 Release Candidate Preparation — Phase 5: Complete, stopped for human review
 
 ## Completed
 
@@ -41,14 +41,19 @@ V1 Release Candidate Preparation — Phase 4: Release notes draft complete
 - Recorded completed release checks and remaining human-review items.
 - Created `docs/v1-release-notes.md`.
 - Documented the V0-to-V1 format migration, bounded validation evidence, exclusions, and next review items.
+- Created `docs/v1-final-consistency-check.md`.
+- Updated current navigation and release-gap status to reflect completion of V1 Run 001.
+- Verified that README files and the Snapshot v1 protocol were unchanged during release-candidate preparation.
+- Verified that no code, CLI, dependencies, agents, workflows, or automation were added.
+- Verified that historical V0 evidence was not deleted.
 
 ## In Progress
 
-- Running the final repository consistency review.
+- Awaiting human release-candidate review.
 
 ## Next Action
 
-Create `docs/v1-final-consistency-check.md` after verifying protected files, protocol fields, aligned materials, historical evidence, and repository scope.
+Review `RELEASE_CHECKLIST.md`, `docs/v1-release-notes.md`, and `docs/v1-final-consistency-check.md` together.
 
 ## Boundaries
 
@@ -100,6 +105,16 @@ Create `docs/v1-final-consistency-check.md` after verifying protected files, pro
 - Described the five-section V0 to six-field V1 migration.
 - Recorded only the validation evidence actually present.
 - Kept implementation, automation, agents, workflows, and protocol expansion out of scope.
+
+### Phase 5 — Final consistency check
+
+- Verified that both README files were untouched during release-candidate preparation.
+- Verified that `docs/snapshot-format.md` remained stable and defines the six official V1 fields.
+- Verified alignment across active prompts, examples, and V1 tests.
+- Verified that no code, dependencies, CLI, agents, workflows, or automation were added.
+- Verified that historical V0 evidence was preserved.
+- Created `docs/v1-final-consistency-check.md`.
+- Stopped before release creation, implementation work, or README changes.
 
 ## V1 Alignment Inventory
 
@@ -184,7 +199,8 @@ No planned change alters the protocol, narrative, or historical test outcomes. N
 - `tests/test-template.md` — reusable V1 manual result template.
 - `snapshots/001-chatgpt-to-claude.md` — V0 Snapshot artifact used by test 001.
 - `tests/v1-spec-conformance-test.md` — V1 manual conformance design using the strict six-field format.
-- `tests/v1-validation-run-001.md` — first V1 run record, prepared but still awaiting a manual cross-AI result.
+- `tests/v1-validation-run-001.md` — completed first V1 cross-AI validation run.
+- `tests/v1-validation-summary.md` — factual summary of V0 evidence and V1 Run 001.
 
 ### Legacy / unclear
 
@@ -196,5 +212,9 @@ No planned change alters the protocol, narrative, or historical test outcomes. N
 - `docs/v1-friction-notes.md` — early V1 planning notes focused on access/toolization rather than the current strict-format release.
 - `docs/v1-release-gap.md` — current release-readiness analysis and human-review decision point.
 - `docs/v1-alignment-report.md` — completed V1 alignment record.
+- `docs/v1-release-readiness-inventory.md` — release-candidate layer and risk inventory.
+- `docs/v1-release-notes.md` — factual V1 release-notes draft.
+- `docs/v1-final-consistency-check.md` — final release-candidate consistency results.
+- `RELEASE_CHECKLIST.md` — human release-candidate review checklist.
 - `docs/future-direction.md` — deferred research ideas; several ideas intentionally exceed the current product boundary.
 - `GOAL.md` — long-running release-readiness state, not a public protocol layer.
