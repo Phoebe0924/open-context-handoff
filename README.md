@@ -1,128 +1,153 @@
 # OCH — Open Context Handoff
 
-## Stop retelling the same story to every new AI window.
-
-A lightweight protocol for carrying your working context across ChatGPT, Claude, Gemini, and coding agents like Cursor / Claude Code.
+> You are not losing context.  
+> You are losing continuity of thought.
 
 ---
 
-## 🧠 The problem
+## The shift
 
-If you use AI seriously, you’ve probably lived this loop:
+We no longer work with a single AI system.
 
-You open a new chat and think:
+We constantly move between:
 
-> “Wait… where were we again?”
+ChatGPT · Claude · Gemini · Cursor · Claude Code · Agents
 
-So you do the ritual:
+But something breaks every time we switch:
 
-- re-explain the project
-- re-explain your decisions
-- re-explain what you already rejected
-- re-explain what “this thing” even is
+> Our thinking does not carry over.
 
-And the AI nods politely…  
-and quietly rebuilds your entire story from scratch.
+Only fragments do.
 
-Sometimes correctly.  
+---
+
+## The invisible problem
+
+Every switch forces you to:
+
+- re-explain what you're doing
+- rebuild your decisions
+- re-establish what is true
+- reconstruct the same narrative
+
+Meanwhile:
+
+AI quietly rewrites your story in its own way.
+
+Sometimes correct.  
 Sometimes confidently wrong.
 
----
+You are no longer continuing your work.
 
-## 🪦 The real feeling
-
-Every new AI window feels like:
-
-> you woke up in a parallel universe  
-> where nobody remembers yesterday’s work
+You are restarting your thinking.
 
 ---
 
-## 💡 The insight
+## The real divide
 
-This is not a memory problem.
+There are two types of AI users:
 
-It’s a **context ownership problem**.
+### 1. Restart thinkers
 
-You don’t just lose context.
+They treat every new AI window as a blank slate.
 
-You lose control over what the AI thinks is true.
+### 2. Continuity thinkers
 
----
-
-## 📦 What OCH does
-
-OCH creates a **Context Snapshot** you can carry between AI tools.
-
-Think of it as:
-
-> “a save file for your thinking process”
-
-You can:
-
-- finish a conversation
-- generate a snapshot
-- paste it into another AI
-- continue instantly
-
-No re-explaining. No reset.
+They preserve context across systems and continue from where they stopped.
 
 ---
 
-## ⚙️ How it works (V0)
+## OCH is built for the second group
 
-1. End a conversation when it still makes sense
-2. Generate a snapshot
-3. Quickly confirm it (5 seconds, don’t overthink it)
-4. Paste it into a new AI window
-5. Continue from NEXT ACTION
+Not to store memory.  
+Not to automate workflows.  
+Not to build agents.
 
----
+But to solve one thing:
 
-## 🧩 Core principle
-
-> AI drafts. Human approves.  
-> Context belongs to the user, not the platform.
+> Make thinking portable across AI systems.
 
 ---
 
-## 🚫 What OCH is NOT
+## What OCH does
 
-- Not a memory system
-- Not an AI agent
-- Not automation magic
-- Not a knowledge base replacement
+OCH generates a **Context Snapshot**:
 
-It’s intentionally small.
+A small, human-readable artifact containing:
 
----
+- what you are working on
+- what you have decided
+- what you explicitly rejected
+- what you should do next
 
-## 🧭 Why this exists
+You can carry it across:
 
-Because switching AI tools should feel like:
+- AI chat windows
+- different models
+- coding agents (Cursor / Claude Code)
+- personal notes
 
-> continuing a conversation
+And continue instantly.
 
-not
-
-> starting your life over again
-
----
-
-## 🧪 Status
-
-This is V0.
-
-It is intentionally simple.
-
-We are not trying to “solve AI memory”.
-
-We are testing something smaller:
-
-> Can we stop humans from re-explaining everything all the time?
+No re-explaining.
 
 ---
 
-## 🧠 Philosophy
+## How it works (V0)
 
-Context belongs to people, not platforms.
+1. End a session while thinking is still coherent  
+2. Generate a Context Snapshot  
+3. Validate it in 5 seconds  
+4. Paste into another AI system  
+5. Continue from NEXT ACTION  
+
+---
+
+## Core principle
+
+> AI drafts.  
+> Humans decide.  
+> Context belongs to the user.
+
+---
+
+## Why this matters
+
+AI systems are becoming more powerful.
+
+But human thinking is becoming more fragmented.
+
+We optimize models.
+
+But we lose continuity.
+
+OCH is a small attempt to fix one thing:
+
+> Keep thinking alive across system boundaries.
+
+---
+
+## Not trying to solve
+
+OCH is intentionally narrow.
+
+It is NOT:
+
+- a memory system
+- an AI agent
+- an automation tool
+- a knowledge base
+
+---
+
+## It only solves this
+
+> How do you continue thinking without restarting yourself every time you switch systems?
+
+---
+
+## Philosophy
+
+Context does not belong to platforms.
+
+It belongs to the person thinking.
