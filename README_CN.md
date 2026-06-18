@@ -83,19 +83,17 @@ OCH 会帮你把当前对话压缩成一份 **上下文快照（Context Snapshot
 
 ## 开始使用
 
-完成一次手动测试，请按这个顺序：
+完成一次 Snapshot v1 手动测试，请按这个顺序：
 
-1. [阅读 V0 快速指南](docs/quickstart.md)
-2. [复制 Snapshot 生成提示词](prompts/snapshot_generator_prompt.md)
-3. [对照好与坏的 Snapshot 示例](examples/bad-vs-good-snapshot.md)
+1. [从实用入门指南开始](START_HERE.md)
+2. [查看 Snapshot v1 格式](docs/snapshot-format.md)
+3. [复制 Snapshot 生成提示词](prompts/snapshot_generator_prompt.md)
 4. [复制接收端提示词](prompts/receiver_prompt.md)
-5. [如实记录测试结果](tests/test-template.md)
-
-测试前也可以查看更严格的 [Context Snapshot 格式](docs/snapshot-format.md)和 [V0 范围](docs/v0-scope.md)。
+5. [如实记录测试结果](tests/user-trial-result-template.md)
 
 ---
 
-## ⚙️ 怎么用（V0）
+## ⚙️ 怎么用（Snapshot v1）
 
 1. 对话快结束时生成 Context Snapshot
 2. 人工检查并确认内容
@@ -113,26 +111,29 @@ OCH 会帮你把当前对话压缩成一份 **上下文快照（Context Snapshot
 ## 🧩 Context Snapshot 包含什么
 
 ```markdown
-## OCH Snapshot
+### WHAT WE ARE DOING
 
-WHAT WE'RE DOING
-[当前在做什么]
+[用一句话说明当前任务。]
 
-WHERE WE ARE
-Done:
-[已经完成什么]
+### CURRENT STATE
 
-Current:
-[现在卡在哪里]
+[简洁说明当前阶段或状态。]
 
-HARD DECISIONS
-- [已经决定、不需要重开的判断]
+### COMPLETED
 
-NEXT ACTION
-- [下一步具体动作，只写一条]
+- [已经完成的工作。]
 
-CONTEXT NOTES
-- [少量背景信息，拿不准的不写]
+### DECISIONS
+
+- [不应被默默推翻的既定决定。]
+
+### CONSTRAINTS
+
+- [必须遵守的硬性限制或规则。]
+
+### NEXT ACTION
+
+[只写一个具体、可执行、可观察的下一步动作。]
 ```
 
 ---
@@ -184,7 +185,7 @@ OCH 想解决的不是“AI 记不住我”。
 
 ## 🧪 当前状态
 
-这是 V0。
+当前使用的是 Snapshot v1 格式。
 
 故意很小。
 
@@ -192,7 +193,7 @@ OCH 想解决的不是“AI 记不住我”。
 不做自动化。  
 不做复杂系统。
 
-先验证一件事：
+继续通过手动测试验证一件事：
 
 > 一份简单的上下文快照，能不能减少 70% 的重复解释？
 
