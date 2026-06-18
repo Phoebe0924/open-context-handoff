@@ -5,6 +5,8 @@ New here? Start with [START_HERE.md](START_HERE.md).
 > You are not losing context.  
 > You are losing continuity of thought.
 
+OCH is a small, human-readable Snapshot format for carrying working context from one AI system to another.
+
 ---
 
 ## The shift
@@ -97,15 +99,13 @@ No re-explaining.
 
 ## Start here
 
-For one complete manual test, follow this path:
+For the current V1 first-user path:
 
-1. [Run the V0 quickstart](docs/quickstart.md)
-2. [Copy the Snapshot generator prompt](prompts/snapshot_generator_prompt.md)
-3. [Compare good and bad Snapshots](examples/bad-vs-good-snapshot.md)
+1. [Start with the practical guide](START_HERE.md)
+2. [Review the Snapshot v1 format](docs/snapshot-format.md)
+3. [Copy the Snapshot generator prompt](prompts/snapshot_generator_prompt.md)
 4. [Copy the receiver prompt](prompts/receiver_prompt.md)
-5. [Record what actually happened](tests/test-template.md)
-
-Before testing, you can also review the stricter [Context Snapshot format](docs/snapshot-format.md) and [V0 scope](docs/v0-scope.md).
+5. [Record the trial result](tests/user-trial-result-template.md)
 
 ---
 
