@@ -38,14 +38,9 @@ This makes the handoff contract more explicit and reduces the chance that a rece
 
 V0 produced early manual evidence across several AI handoffs, although its records are incomplete and use the earlier format.
 
-V1 Manual Validation Run 001 used the same six-field Snapshot with DeepSeek, Claude, and Gemini. All three systems:
+V1 Manual Validation Run 001 used the same six-field Snapshot with DeepSeek, Claude, and Gemini. The recorded evaluation marked context understanding, decision preservation, constraint preservation, `NEXT ACTION` continuation, and no re-explanation as `YES`; each system returned the requested confirmation.
 
-- understood the bounded context,
-- preserved the stated decisions and constraints,
-- continued the single `NEXT ACTION`, and
-- required no prior-conversation explanation.
-
-The run passed its stated criteria. It tested a short confirmation action, not complex execution or full product behavior.
+The run passed its stated criteria. It was one bounded manual validation run of the V1 handoff format, using a short confirmation action. It does not prove full product validation or performance on complex execution.
 
 ## Intentionally out of scope
 

@@ -9,7 +9,7 @@ This analysis identifies the smallest remaining documentation work for a coheren
 - `docs/snapshot-format.md` defines the strict six-field OCH Snapshot v1 protocol.
 - `prompts/` contains full and quick generation/receiver materials.
 - `examples/` contains a compact example and a bad-vs-good comparison.
-- `tests/` contains V0 evidence, a V1 conformance design, and a prepared first V1 validation run record.
+- `tests/` contains V0 evidence, a V1 conformance design, and a completed first V1 validation run record.
 - The directory structure already supports distinct narrative, protocol, prompt, example, and validation layers.
 
 ## 2. What is missing?
