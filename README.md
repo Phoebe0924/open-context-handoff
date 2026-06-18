@@ -1,175 +1,82 @@
 # OCH — Open Context Handoff
 
-> You are not losing context.  
-> You are losing continuity of thought.
+## 1. Problem
 
----
+We move between ChatGPT, Claude, Gemini, Cursor, Claude Code, and other AI systems. Each switch breaks continuity: the user must re-explain the task, current state, decisions, constraints, and next step.
 
-## The shift
+OCH exists so work can continue without reconstructing the full conversation.
 
-We no longer work with a single AI system.
+## 2. Core Idea
 
-We constantly move between:
+Thinking should be portable even when context breaks across AI systems.
 
-ChatGPT · Claude · Gemini · Cursor · Claude Code · Agents
+OCH turns the minimum human-approved context needed to continue into a **Context Snapshot**. The user owns and reviews that Snapshot before handing it to another AI.
 
-But something breaks every time we switch:
+## 3. OCH Snapshot Spec (STRICT)
 
-> Our thinking does not carry over.
+### OCH Snapshot v1
 
-Only fragments do.
+```markdown
+## OCH Snapshot v1
 
----
+WHAT WE ARE DOING:
+[One sentence.]
 
-## The invisible problem
+CURRENT STATE:
+[Current phase or status.]
 
-Every switch forces you to:
+COMPLETED:
+- [Completed item.]
 
-- re-explain what you're doing
-- rebuild your decisions
-- re-establish what is true
-- reconstruct the same narrative
+DECISIONS:
+- [Immutable decision.]
 
-Meanwhile:
+CONSTRAINTS:
+- [Hard constraint.]
 
-AI quietly rewrites your story in its own way.
+NEXT ACTION:
+- [Exactly one executable step.]
+```
 
-Sometimes correct.  
-Sometimes confidently wrong.
+Rules:
 
-You are no longer continuing your work.
+- Use every field exactly once and in this order.
+- Do not add fields.
+- `WHAT WE ARE DOING` must be one sentence.
+- `COMPLETED`, `DECISIONS`, and `CONSTRAINTS` must use bullet lists. Use `- None.` when a list is empty.
+- `NEXT ACTION` must contain exactly one executable step with an observable result.
+- Do not put planning, multiple steps, alternatives, or abstract thinking in `NEXT ACTION`.
+- A human must review and approve the Snapshot before handoff.
 
-You are restarting your thinking.
+## 4. Example
 
----
+ChatGPT produces:
 
-## The real divide
+```markdown
+## OCH Snapshot v1
 
-There are two types of AI users:
+WHAT WE ARE DOING:
+Prepare a one-page community garden proposal.
 
-### 1. Restart thinkers
+CURRENT STATE:
+The outline is complete; the opening paragraph is missing.
 
-They treat every new AI window as a blank slate.
+COMPLETED:
+- Confirmed the audience and one-page limit.
 
-### 2. Continuity thinkers
+DECISIONS:
+- Focus on neighborhood food access.
 
-They preserve context across systems and continue from where they stopped.
+CONSTRAINTS:
+- Exclude event programming.
 
----
+NEXT ACTION:
+- Draft a 100-word opening paragraph from the outline.
+```
 
-## OCH is built for the second group
+Claude receives the reviewed Snapshot and drafts the paragraph without asking for the prior conversation.
 
-Not to store memory.  
-Not to automate workflows.  
-Not to build agents.
+## 5. Status
 
-But to solve one thing:
-
-> Make thinking portable across AI systems.
-
----
-
-## What OCH does
-
-OCH generates a **Context Snapshot**:
-
-A small, human-readable artifact containing:
-
-- what you are working on
-- what you have decided
-- what you explicitly rejected
-- what you should do next
-
-You can carry it across:
-
-- AI chat windows
-- different models
-- coding agents (Cursor / Claude Code)
-- personal notes
-
-And continue instantly.
-
-No re-explaining.
-
----
-
-## Start here
-
-For one complete manual test, follow this path:
-
-1. [Run the V0 quickstart](docs/quickstart.md)
-2. [Copy the Snapshot generator prompt](prompts/snapshot_generator_prompt.md)
-3. [Compare good and bad Snapshots](examples/bad-vs-good-snapshot.md)
-4. [Copy the receiver prompt](prompts/receiver_prompt.md)
-5. [Record what actually happened](tests/test-template.md)
-
-Before testing, you can also review the stricter [Context Snapshot format](docs/snapshot-format.md) and [V0 scope](docs/v0-scope.md).
-
----
-
-## Quick manual testing
-
-- [Quick receiver prompt](prompts/quick-receiver-prompt.md)
-- [Quick Snapshot template](prompts/quick-snapshot-template.md)
-- [7-run validation log](tests/7-run-validation-log.md)
-
----
-
-## How it works (V0)
-
-1. End a session while thinking is still coherent  
-2. Generate a Context Snapshot  
-3. Review and approve it
-4. Paste into another AI system  
-5. Continue from NEXT ACTION  
-
----
-
-## Core principle
-
-> AI drafts.  
-> Humans decide.  
-> Context belongs to the user.
-
----
-
-## Why this matters
-
-AI systems are becoming more powerful.
-
-But human thinking is becoming more fragmented.
-
-We optimize models.
-
-But we lose continuity.
-
-OCH is a small attempt to fix one thing:
-
-> Keep thinking alive across system boundaries.
-
----
-
-## Not trying to solve
-
-OCH is intentionally narrow.
-
-It is NOT:
-
-- a memory system
-- an AI agent
-- an automation tool
-- a knowledge base
-
----
-
-## It only solves this
-
-> How do you continue thinking without restarting yourself every time you switch systems?
-
----
-
-## Philosophy
-
-Context does not belong to platforms.
-
-It belongs to the person thinking.
+- V0 validated
+- V1 in refinement

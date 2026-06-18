@@ -1,82 +1,53 @@
-# Bad vs. Good OCH Context Snapshot
+# Bad vs. Good OCH Snapshot v1
 
 ## Bad
 
 ```markdown
-## OCH Snapshot
+## OCH Snapshot v1
 
-### WHAT WE'RE DOING
+WHAT WE ARE DOING:
+We discussed many community garden ideas and need to improve everything.
 
-We discussed many ideas for a community garden and need to make everything better.
+CURRENT STATE:
+We need to keep working.
 
-### WHERE WE ARE
+COMPLETED:
+- Discussed funding, events, food access, and volunteers.
 
-Done:
-- We discussed funding, events, food access, volunteers, and many other ideas.
-
-Current:
-- We need to keep working on the proposal.
-
-### HARD DECISIONS
-
+DECISIONS:
 - We probably want a large launch event.
-- The proposal should be inspiring and practical.
 
-### NEXT ACTION
+CONSTRAINTS:
+- Make it inspiring and practical.
 
+NEXT ACTION:
 - Research funding, rewrite the proposal, make a timeline, and plan the launch.
-
-### CONTEXT NOTES
-
-- The full conversation included many useful details and possibilities that the next AI should understand.
-- There may also be an audience and length requirement, but those are not confirmed.
 ```
 
-Why it fails:
+It fails because the task and state are vague, discussion is presented as completed work, an uncertain idea is presented as a decision, the constraint is subjective, and NEXT ACTION contains four actions.
 
-- WHAT WE'RE DOING has no defined deliverable or scope.
-- Done is a topic list, not recoverable progress.
-- Current gives no exact stopping point.
-- HARD DECISIONS contains uncertainty and a vague aspiration.
-- NEXT ACTION combines four competing actions.
-- CONTEXT NOTES asks the receiver to reconstruct missing history and includes uncertain claims.
-
-The receiver would still need to ask what document to create, for whom, at what length, and which action comes first.
-
-## Improved
+## Good
 
 ```markdown
-## OCH Snapshot
+## OCH Snapshot v1
 
-### WHAT WE'RE DOING
+WHAT WE ARE DOING:
+Prepare a one-page community garden proposal.
 
-We are preparing a one-page community garden proposal focused on neighborhood food access.
+CURRENT STATE:
+The outline is complete; the opening paragraph is missing.
 
-### WHERE WE ARE
+COMPLETED:
+- Confirmed the audience and drafted the outline.
 
-Done:
-- Confirmed the audience and drafted an outline.
+DECISIONS:
+- Focus on neighborhood food access.
 
-Current:
-- The opening paragraph is not written.
+CONSTRAINTS:
+- Exclude event programming.
 
-### HARD DECISIONS
-
-- Event programming is outside this proposal's scope.
-
-### NEXT ACTION
-
+NEXT ACTION:
 - Draft a 100-word opening paragraph from the outline.
-
-### CONTEXT NOTES
-
-- The neighborhood association will review the proposal.
 ```
 
-Why it works:
-
-- The deliverable, audience, scope, and stopping point are explicit.
-- One rejected direction is preserved so it is not reopened.
-- NEXT ACTION produces a specific output immediately.
-
-Instead of repeating the earlier discussion about audience, length, focus, and event ideas, the user can paste this Snapshot and receive a first paragraph.
+It works because the receiver knows the deliverable, exact stopping point, settled direction, hard boundary, and single executable action without needing the prior conversation.

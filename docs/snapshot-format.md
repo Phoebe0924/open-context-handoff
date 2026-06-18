@@ -1,112 +1,90 @@
-# OCH Context Snapshot Format
+# OCH Snapshot v1 Specification
 
-An OCH Context Snapshot is a small, human-reviewed handoff artifact. It preserves only the anchors needed to continue useful work in another AI window.
+An OCH Snapshot is a small, human-reviewed handoff artifact. It contains only the recoverable anchors required to continue useful work in another AI system.
 
-Recommended total length: **150–300 words**, and normally no more than **400 words**. Shorter is better when it still supports the NEXT ACTION.
+## Exact format
 
 ```markdown
-## OCH Snapshot
+## OCH Snapshot v1
 
-### WHAT WE'RE DOING
+WHAT WE ARE DOING:
+[One sentence.]
 
-[The goal and scope in 1–2 sentences.]
+CURRENT STATE:
+[Current phase or status.]
 
-### WHERE WE ARE
+COMPLETED:
+- [Completed item.]
 
-Done:
-- [Completed work relevant to the handoff.]
+DECISIONS:
+- [Immutable decision.]
 
-Current:
-- [The present state, question, or stopping point.]
+CONSTRAINTS:
+- [Hard constraint.]
 
-### HARD DECISIONS
-
-- [A confirmed decision that should not be reopened.]
-
-### NEXT ACTION
-
-- [One concrete action for the receiving AI or user.]
-
-### CONTEXT NOTES
-
-- [Minimal background that helps interpret the snapshot.]
+NEXT ACTION:
+- [Exactly one executable step.]
 ```
 
-## Section rules
+All six fields are required, must appear exactly once, and must remain in this order. No additional fields are allowed.
 
-### WHAT WE'RE DOING
+## Field rules
 
-**Purpose:** Identify the active task and its boundary.
+### WHAT WE ARE DOING
 
-**Recommended maximum:** 2 sentences or 50 words.
+States the active task and deliverable in one sentence. Omit project history, broad mission statements, and unrelated work.
 
-**Omit:** project history, motivation already obvious from the goal, and unrelated workstreams.
+### CURRENT STATE
 
-**Common mistakes:** describing a broad mission instead of the current task, or copying the opening summary of the full conversation.
+States the exact phase, status, or stopping point. Keep it to one short sentence and do not repeat completed work.
 
-### WHERE WE ARE
+### COMPLETED
 
-**Purpose:** Show what relevant work is complete and the exact stopping point.
+Lists only finished work that affects the handoff. Use bullets only, one completed item per bullet, and normally no more than five bullets.
 
-**Recommended maximum:** 3 Done bullets and 2 Current bullets.
+### DECISIONS
 
-Include both:
+Lists immutable decisions that the receiver must not reopen. Use bullets only; omit preferences, suggestions, assumptions, and unresolved choices.
 
-- **Done:** completed work that matters to the handoff
-- **Current:** the exact present state or stopping point
+### CONSTRAINTS
 
-**Omit:** every intermediate step, abandoned exploration, and accomplishments that do not affect what happens next.
-
-**Common mistakes:** mixing planned work into Done, saying “in progress” without a stopping point, or repeating WHAT WE'RE DOING.
-
-### HARD DECISIONS
-
-**Purpose:** Prevent the receiving AI from reopening choices that the human has already confirmed.
-
-**Recommended maximum:** 5 bullets, one decision per bullet.
-
-**Omit:** preferences that remain negotiable, predictions, assumptions, and rejected ideas that are unlikely to recur.
-
-**Common mistakes:** upgrading an AI suggestion into a decision, preserving too many constraints, or writing vague principles that cannot guide the next action.
+Lists hard boundaries the receiver must obey. Use bullets only; omit optional preferences and general advice.
 
 ### NEXT ACTION
 
-**Purpose:** Give the receiver one unambiguous place to resume.
+Contains exactly one executable step. Start with an action verb and name an observable result.
 
-**Recommended maximum:** 1 bullet and 25 words.
+Valid:
 
-Use one concrete action only, with an observable output when possible. A single action matters because a handoff should restore momentum, not recreate a backlog or ask the receiver to choose among competing priorities.
+- `Draft a 100-word opening paragraph from the outline.`
 
-**Omit:** secondary tasks, future phases, optional improvements, and “continue working on this.”
+Invalid:
 
-**Common mistakes:** combining actions with “and,” naming a broad goal instead of an action, or assigning work that depends on missing information.
+- `Think about the proposal.`
+- `Plan the next steps.`
+- `Research funding and rewrite the proposal.`
 
-### CONTEXT NOTES
+The field restores execution at one clear point. Multiple actions create a backlog and force the receiver to choose what to do first.
 
-**Purpose:** Supply minimal background needed to interpret the other sections.
+## Empty lists
 
-**Recommended maximum:** 3 bullets or 75 words.
+If `COMPLETED`, `DECISIONS`, or `CONSTRAINTS` has no items, write:
 
-**Omit:** full conversation summaries, biography, speculative context, sensitive details not needed by the receiver, and anything already stated elsewhere.
+```markdown
+- None.
+```
 
-**Common mistakes:** using this section as overflow, hiding decisions here, or adding details merely because they might be useful someday.
+Do not omit the field.
 
-## What to omit from the entire Snapshot
+## What to omit
 
 - full transcripts or chronological summaries
-- unresolved brainstorming unless it directly explains the current state
-- emotional tone or personal data that the next action does not require
-- claims the human cannot verify
-- duplicated information
+- brainstorming and speculative context
+- unverified claims
+- duplicate information
+- future tasks beyond NEXT ACTION
+- any field not defined by this specification
 
-## Human review is required
+## Human review
 
-The source AI can compress context incorrectly, turn suggestions into decisions, or invent a smooth narrative where the conversation was uncertain. Human review keeps the Snapshot user-owned: the human decides what is true, what may cross the system boundary, and what the receiver is authorized to treat as settled.
-
-Before use:
-
-- If a detail is uncertain, omit it.
-- Remove anything unnecessary or sensitive.
-- Confirm that HARD DECISIONS are genuinely settled.
-- Confirm that NEXT ACTION contains exactly one executable action.
-- Approve the final Snapshot before pasting it into another AI window.
+AI may invent progress, turn suggestions into decisions, or hide uncertainty. Before handoff, a human must verify every field, remove anything inaccurate or unnecessary, and approve the final Snapshot.

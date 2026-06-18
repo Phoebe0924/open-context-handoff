@@ -26,13 +26,13 @@
 
 [What did you avoid repeating? What did you still have to repeat?]
 
-## Did the receiving AI continue from NEXT ACTION?
+## Did the receiving AI execute NEXT ACTION?
 
 [Yes / Partly / No, with a brief reason]
 
-## Did it respect HARD DECISIONS?
+## Did it respect DECISIONS and CONSTRAINTS?
 
-[Yes / Partly / No, with any decision it reopened or violated]
+[Yes / Partly / No, with any decision it reopened or constraint it violated]
 
 ## Clarification required
 

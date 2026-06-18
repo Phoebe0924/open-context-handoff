@@ -1,205 +1,82 @@
 # OCH — Open Context Handoff
 
-## 别再每开一个 AI 窗口，就重新讲一遍你的故事。
+## 1. 问题
 
-OCH 是一个轻量协议，用来让你在 ChatGPT / Claude / Gemini / Cursor / Claude Code 之间，带着上下文继续工作。
+我们不断在 ChatGPT、Claude、Gemini、Cursor、Claude Code 等 AI 系统之间切换。每次切换都会打断连续性：用户必须重新解释任务、当前状态、决定、约束和下一步。
 
----
+OCH 的目标是让工作继续，而不是重建整段对话。
 
-## 🧠 问题是什么
+## 2. 核心理念
 
-如果你重度使用 AI，你一定经历过这种循环：
+即使上下文在不同 AI 系统之间断裂，思考也应该可以携带。
 
-你打开一个新窗口，然后开始：
+OCH 把继续工作所需的最少上下文整理为一份 **Context Snapshot**。用户在交接给另一个 AI 前拥有并审核这份 Snapshot。
 
-- “我们刚刚在做一个项目……”
-- “这个背景是……”
-- “这个方案我们已经否掉了……”
-- “现在进度在这里……”
+## 3. OCH Snapshot 规范（严格）
 
-然后你会发现：
-
-👉 你不是在继续工作  
-👉 你是在重新上岗
-
-更糟的是：
-
-AI 会开始“自己补故事”。
-
-有时候补对了。  
-有时候补得很自信，但完全不对。
-
----
-
-## 🪦 真实体验
-
-每一个新 AI 窗口，都像：
-
-> 你刚睡醒在一个平行宇宙，  
-> 没人记得你昨天做了什么。
-
-你只能重新证明一次：
-
-你是谁，你在做什么，你已经走到哪里。
-
----
-
-## 💡 核心洞察
-
-这不是单纯的记忆问题。
-
-你丢失的不是信息。
-
-你丢失的是：
-
-> **思考的连续性。**
-
-更深一层说，这是：
-
-> **上下文所有权问题。**
-
-你无法明确决定：
-
-- 哪些信息应该被带到下一个窗口
-- 哪些决定已经定稿
-- 哪些方案不该再被重新讨论
-- 下一个 AI 应该从哪里继续
-
----
-
-## 📦 OCH 是什么
-
-OCH 会帮你把当前对话压缩成一份 **上下文快照（Context Snapshot）**。
-
-你可以把它理解成：
-
-> AI 时代的接班便条。
-
-它不保存完整聊天记录。
-
-它只保存足够让另一个 AI，或者三天后的你，快速重新进入状态的关键锚点。
-
----
-
-## 开始使用
-
-完成一次手动测试，请按这个顺序：
-
-1. [阅读 V0 快速指南](docs/quickstart.md)
-2. [复制 Snapshot 生成提示词](prompts/snapshot_generator_prompt.md)
-3. [对照好与坏的 Snapshot 示例](examples/bad-vs-good-snapshot.md)
-4. [复制接收端提示词](prompts/receiver_prompt.md)
-5. [如实记录测试结果](tests/test-template.md)
-
-测试前也可以查看更严格的 [Context Snapshot 格式](docs/snapshot-format.md)和 [V0 范围](docs/v0-scope.md)。
-
----
-
-## ⚙️ 怎么用（V0）
-
-1. 对话快结束时生成 Context Snapshot
-2. 人工检查并确认内容
-3. 复制到新窗口  
-4. 从 NEXT ACTION 继续  
-
-目标不是完美恢复全部上下文。
-
-目标是：
-
-> 让你不用每次都从零开始解释。
-
----
-
-## 🧩 Context Snapshot 包含什么
+### OCH Snapshot v1
 
 ```markdown
-## OCH Snapshot
+## OCH Snapshot v1
 
-WHAT WE'RE DOING
-[当前在做什么]
+WHAT WE ARE DOING:
+[只写一句。]
 
-WHERE WE ARE
-Done:
-[已经完成什么]
+CURRENT STATE:
+[当前阶段或状态。]
 
-Current:
-[现在卡在哪里]
+COMPLETED:
+- [已完成事项。]
 
-HARD DECISIONS
-- [已经决定、不需要重开的判断]
+DECISIONS:
+- [不可重新讨论的决定。]
 
-NEXT ACTION
-- [下一步具体动作，只写一条]
+CONSTRAINTS:
+- [必须遵守的硬约束。]
 
-CONTEXT NOTES
-- [少量背景信息，拿不准的不写]
+NEXT ACTION:
+- [唯一、具体、可执行的步骤。]
 ```
 
----
+规则：
 
-## 🧩 核心原则
+- 每个字段只出现一次，并严格保持以上顺序。
+- 不得增加字段。
+- `WHAT WE ARE DOING` 只能写一句。
+- `COMPLETED`、`DECISIONS` 和 `CONSTRAINTS` 只能使用项目符号；没有内容时写 `- None.`。
+- `NEXT ACTION` 必须只有一个可执行步骤，并产生可观察结果。
+- `NEXT ACTION` 不得包含规划、多步骤、备选方案或抽象思考。
+- 交接前必须由人类审核并确认 Snapshot。
 
-> AI 负责起草。  
-> 人类负责确认。  
-> 上下文属于用户，而不是平台。
+## 4. 示例
 
----
+ChatGPT 生成：
 
-## 🚫 OCH 不是什么
+```markdown
+## OCH Snapshot v1
 
-OCH 不是：
+WHAT WE ARE DOING:
+准备一份单页社区花园提案。
 
-- 记忆系统
-- AI Agent
-- 自动化工具
-- 知识库
-- 聊天记录归档器
+CURRENT STATE:
+提纲已经完成，但开头段落尚未撰写。
 
-它只做一件小事：
+COMPLETED:
+- 已确认受众和单页限制。
 
-> 让你不用每次都重新讲故事。
+DECISIONS:
+- 聚焦社区食物获取问题。
 
----
+CONSTRAINTS:
+- 不包含活动策划。
 
-## 🧭 为什么要做这个
+NEXT ACTION:
+- 根据提纲起草一段 100 字的开头。
+```
 
-现在的 AI 越来越强。
+Claude 收到经人工审核的 Snapshot 后，直接起草开头，无需询问之前的完整对话。
 
-但人的工作流越来越碎：
+## 5. 状态
 
-- 一个问题问 ChatGPT
-- 一个角度问 Claude
-- 一个验证问 Gemini
-- 一个执行交给 Cursor / Claude Code
-
-工具越来越多，思考却越来越容易断。
-
-OCH 想解决的不是“AI 记不住我”。
-
-而是：
-
-> 我能不能自己决定，什么上下文应该被带到下一站？
-
----
-
-## 🧪 当前状态
-
-这是 V0。
-
-故意很小。
-
-不做插件。  
-不做自动化。  
-不做复杂系统。
-
-先验证一件事：
-
-> 一份简单的上下文快照，能不能减少 70% 的重复解释？
-
----
-
-## 哲学
-
-上下文不属于平台。
-
-它属于正在思考的人。
+- V0 已验证
+- V1 正在细化

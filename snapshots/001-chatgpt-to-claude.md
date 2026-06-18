@@ -10,38 +10,27 @@ Claude new window
 
 ## Scenario
 
-Testing whether an OCH Context Snapshot can reduce repeated explanation when switching from ChatGPT to Claude.
+Test whether an OCH Snapshot v1 reduces repeated explanation when switching from ChatGPT to Claude.
 
-## OCH Snapshot
+## OCH Snapshot v1
 
-### WHAT WE'RE DOING
+WHAT WE ARE DOING:
+Manually validate OCH as a protocol for carrying working context across AI systems.
 
-We are defining and manually validating OCH — Open Context Handoff, a lightweight protocol for carrying working context across AI windows and tools.
+CURRENT STATE:
+The repository is published, but the first ChatGPT-to-Claude handoff has not been run.
 
-### WHERE WE ARE
+COMPLETED:
+- Published the English and Chinese READMEs.
+- Defined OCH as user-owned context handoff.
+- Kept V0 manual-first and documentation-first.
 
-Done:
-- Created GitHub repo
-- Published English README
-- Published Chinese README
-- Clarified that V0 should stay minimal
-- Defined OCH as user-owned context handoff, not memory system
+DECISIONS:
+- V0 validates whether a small Snapshot reduces repeated explanation.
+- Human approval is required before handoff.
 
-Current:
-- The first ChatGPT-to-Claude handoff has not yet been run.
+CONSTRAINTS:
+- Do not build a browser extension, CLI, MCP server, or automation.
 
-### HARD DECISIONS
-
-- V0 does not build a browser extension, CLI, MCP server, or automation.
-- V0 only validates whether a simple Snapshot reduces repeated explanation.
-- README is already published; stop polishing for now.
-- OCH is about context ownership and continuity of thought.
-- Human confirmation is required before using a Snapshot.
-
-### NEXT ACTION
-
-- Run the ChatGPT-to-Claude handoff with this Snapshot and record the result.
-
-### CONTEXT NOTES
-
-- The core pain is having to reconstruct the same working context in each new AI window.
+NEXT ACTION:
+- Run this ChatGPT-to-Claude handoff.
