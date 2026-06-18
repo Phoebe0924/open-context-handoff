@@ -95,12 +95,15 @@ No re-explaining.
 
 ## Start here
 
-- [Run the manual V0 quickstart](docs/quickstart.md)
-- [Review the Context Snapshot format](docs/snapshot-format.md)
-- [Generate a Context Snapshot](prompts/snapshot_generator_prompt.md)
-- [Prepare the receiving AI window](prompts/receiver_prompt.md)
-- [See a minimal example](examples/minimal-snapshot.md)
-- [Record a manual test](tests/test-template.md)
+For one complete manual test, follow this path:
+
+1. [Run the V0 quickstart](docs/quickstart.md)
+2. [Copy the Snapshot generator prompt](prompts/snapshot_generator_prompt.md)
+3. [Compare good and bad Snapshots](examples/bad-vs-good-snapshot.md)
+4. [Copy the receiver prompt](prompts/receiver_prompt.md)
+5. [Record what actually happened](tests/test-template.md)
+
+Before testing, you can also review the stricter [Context Snapshot format](docs/snapshot-format.md) and [V0 scope](docs/v0-scope.md).
 
 ---
 
@@ -108,7 +111,7 @@ No re-explaining.
 
 1. End a session while thinking is still coherent  
 2. Generate a Context Snapshot  
-3. Validate it in 5 seconds  
+3. Review and approve it
 4. Paste into another AI system  
 5. Continue from NEXT ACTION  
 

@@ -16,7 +16,7 @@ Testing whether an OCH Context Snapshot can reduce repeated explanation when swi
 
 ### WHAT WE'RE DOING
 
-We are building OCH — Open Context Handoff, a lightweight protocol for carrying working context across AI windows and tools.
+We are defining and manually validating OCH — Open Context Handoff, a lightweight protocol for carrying working context across AI windows and tools.
 
 ### WHERE WE ARE
 
@@ -28,7 +28,7 @@ Done:
 - Defined OCH as user-owned context handoff, not memory system
 
 Current:
-- Need to dogfood OCH in a real cross-window handoff.
+- The first ChatGPT-to-Claude handoff has not yet been run.
 
 ### HARD DECISIONS
 
@@ -40,10 +40,8 @@ Current:
 
 ### NEXT ACTION
 
-- Use this Context Snapshot in Claude and check whether Claude can continue without asking for the full background again.
+- Run the ChatGPT-to-Claude handoff with this Snapshot and record the result.
 
 ### CONTEXT NOTES
 
-The user is a heavy AI user switching between ChatGPT, Claude, Gemini, Claude Code, Codex, Hermes Agent, and Obsidian.
-
-The strongest pain is: every new AI window feels like starting over.
+- The core pain is having to reconstruct the same working context in each new AI window.

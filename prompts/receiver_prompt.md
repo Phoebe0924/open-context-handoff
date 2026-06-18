@@ -1,14 +1,13 @@
 # OCH Receiver Prompt
 
-You are receiving an OCH Context Snapshot.
+Copy the text inside this block into the new AI window, then paste the reviewed Context Snapshot directly below it.
 
-Rules:
+```text
+Use the OCH Context Snapshot below as the handoff source.
 
-1. Treat HARD DECISIONS as already settled.
-2. Continue from NEXT ACTION.
-3. Do not ask the user to repeat the full background.
-4. Treat CONTEXT NOTES as background, not absolute truth.
-5. If something is unclear, ask one specific question only.
-6. Do not redesign the project unless explicitly asked.
-
-Please continue from NEXT ACTION.
+- Continue from NEXT ACTION.
+- Treat HARD DECISIONS as settled.
+- Use CONTEXT NOTES only as supporting background.
+- Do not request the full prior conversation or redesign the task.
+- If one essential fact is missing, ask one specific question; otherwise begin the action.
+```

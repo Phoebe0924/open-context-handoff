@@ -16,6 +16,8 @@ Guidance for understanding and validating V0:
 - [`repo-map.md`](repo-map.md): explains how to navigate the repository.
 - [`v0-scope.md`](v0-scope.md): states what V0 includes and excludes.
 - [`v0-validation-plan.md`](v0-validation-plan.md): defines the three manual validation tests.
+- [`audit-notes.md`](audit-notes.md): records this documentation audit and the next evidence to gather.
+- [`future-direction.md`](future-direction.md): captures later research directions without adding them to V0.
 
 ## `prompts/`
 

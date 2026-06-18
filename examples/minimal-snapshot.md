@@ -1,5 +1,7 @@
 # Minimal OCH Context Snapshot
 
+This Snapshot contains only the anchors needed for a new AI window to draft the next artifact without hearing the project history.
+
 ## OCH Snapshot
 
 ### WHAT WE'RE DOING
@@ -25,3 +27,5 @@ Current:
 ### CONTEXT NOTES
 
 - The proposal will be reviewed by the neighborhood association.
+
+With this Snapshot, the receiver does not need the earlier discussion about possible audiences, document length, or event programming. It can begin the opening paragraph immediately.

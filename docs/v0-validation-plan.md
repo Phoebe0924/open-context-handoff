@@ -9,7 +9,7 @@ Use [`test-template.md`](../tests/test-template.md) to record each result. The g
 - **Source:** A ChatGPT window with an active, bounded task.
 - **Target:** A new Claude window.
 - **Scenario:** Generate and review a Context Snapshot in ChatGPT, then paste the receiver prompt and Context Snapshot into Claude.
-- **Expected result:** Claude respects HARD DECISIONS and continues from NEXT ACTION without asking for the full background.
+- **Signal to observe:** Whether Claude respects HARD DECISIONS and continues from NEXT ACTION without asking for the full background.
 - **What to record:** Whether repeated explanation was reduced, whether Claude followed NEXT ACTION, what context was missing, and any smallest necessary format change.
 
 ## Test 2: Claude → ChatGPT
@@ -17,7 +17,7 @@ Use [`test-template.md`](../tests/test-template.md) to record each result. The g
 - **Source:** A Claude window with an active, bounded task.
 - **Target:** A new ChatGPT window.
 - **Scenario:** Generate and review a Context Snapshot in Claude, then paste the receiver prompt and Context Snapshot into ChatGPT.
-- **Expected result:** ChatGPT continues useful work from NEXT ACTION while treating CONTEXT NOTES as background rather than settled truth.
+- **Signal to observe:** Whether ChatGPT continues useful work from NEXT ACTION while treating CONTEXT NOTES as background rather than settled truth.
 - **What to record:** Whether repeated explanation was reduced, whether ChatGPT reopened any HARD DECISIONS, what clarification it requested, and any smallest necessary format change.
 
 ## Test 3: ChatGPT or Claude → coding agent
@@ -25,7 +25,7 @@ Use [`test-template.md`](../tests/test-template.md) to record each result. The g
 - **Source:** A ChatGPT or Claude window used to define a small repository task.
 - **Target:** A coding agent in the relevant repository.
 - **Scenario:** Hand off a reviewed Context Snapshot containing the bounded task, current repository state, settled constraints, and one concrete NEXT ACTION. Do not add a separate agent workflow.
-- **Expected result:** The coding agent starts with the stated NEXT ACTION, stays within HARD DECISIONS, and asks at most one specific question if essential context is missing.
+- **Signal to observe:** Whether the coding agent starts with the stated NEXT ACTION, stays within HARD DECISIONS, and asks at most one specific question if essential context is missing.
 - **What to record:** Whether the agent found the correct task and scope, whether it avoided redesign or expansion, what repository context was missing, and whether repeated explanation was reduced.
 
 ## V0 validation threshold

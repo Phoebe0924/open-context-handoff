@@ -1,23 +1,25 @@
 # OCH Snapshot Generator Prompt
 
-```text
-Create a Context Snapshot using the OCH format for handing this work to a new AI window.
+Copy the text inside this block into the current/source AI window.
 
-Do not summarize the whole conversation. Extract only the recoverable anchors needed to continue useful work.
+```text
+Draft an OCH Context Snapshot for handing this work to a new AI window.
+
+Extract only recoverable anchors needed to resume. Do not summarize the conversation chronologically or preserve every idea.
 
 Rules:
-- Preserve confirmed decisions accurately.
-- Include rejected directions only when they are important to prevent the receiving AI from reopening them.
-- Do not invent decisions, progress, requirements, or background.
-- If a detail is uncertain, omit it.
+- Preserve verified goals, relevant completed work, the current stopping point, and confirmed decisions.
+- Include a rejected direction only if it prevents likely rework.
+- Do not invent or resolve uncertainty. Omit doubtful details.
 - WHAT WE'RE DOING must be 1–2 sentences.
-- WHERE WE ARE must include Done and Current.
+- WHERE WE ARE must use Done and Current.
 - HARD DECISIONS must contain settled decisions only.
-- NEXT ACTION must contain exactly one concrete action.
-- Keep CONTEXT NOTES minimal and use it for background only.
-- Output Markdown only, with no introduction or closing commentary.
+- NEXT ACTION must be exactly one concrete, executable action.
+- CONTEXT NOTES must contain only minimal supporting background.
+- Keep the total under 300 words.
+- Output only the Markdown Snapshot.
 
-Use this exact structure:
+Use exactly this structure:
 
 ## OCH Snapshot
 
