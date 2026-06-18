@@ -1,5 +1,7 @@
 # OCH — Open Context Handoff
 
+New here? Start with [START_HERE.md](START_HERE.md).
+
 > You are not losing context.  
 > You are losing continuity of thought.
 

@@ -6,7 +6,7 @@ Make OCH understandable in 30 seconds and usable in 15 minutes by a first-time G
 
 ## Current Phase
 
-First-User Readiness — Phase 5 complete
+First-User Readiness — Phase 6 complete
 
 ## First-User Readiness Progress
 
@@ -50,9 +50,15 @@ First-User Readiness — Phase 5 complete
 - Covered all six required first-trial failure patterns with a symptom, likely cause, and smallest practical fix.
 - Kept recovery focused on better anchors, a bounded task, and correct trial procedure rather than more context or new systems.
 
+### Phase 6 — Minimal README entry link
+
+- Added one linked sentence near the top of `README.md`: “New here? Start with START_HERE.md.”
+- Made no other README change.
+- Preserved the complete existing narrative, structure, wording, and philosophy.
+
 ### Next Action
 
-Decide whether the README needs one minimal link to the new start guide.
+Perform the first-user readiness check and identify the exact next manual test.
 
 ---
 
