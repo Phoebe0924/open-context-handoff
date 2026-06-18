@@ -6,7 +6,7 @@ Make OCH understandable in 30 seconds and usable in 15 minutes by a first-time G
 
 ## Current Phase
 
-First-User Readiness — Phase 6 complete
+First-User Readiness — Phase 7 complete; stopped for human manual testing
 
 ## First-User Readiness Progress
 
@@ -56,9 +56,21 @@ First-User Readiness — Phase 6 complete
 - Made no other README change.
 - Preserved the complete existing narrative, structure, wording, and philosophy.
 
+### Phase 7 — First-user readiness check
+
+- Created `docs/first-user-readiness-check.md`.
+- Confirmed that a direct path now exists from first visit to a recorded manual handoff result.
+- Distinguished documentation readiness from unobserved usability claims.
+- Identified the remaining weakness as the absence of one uncoached first-time-user run through the new path.
+- Defined the exact next manual test and kept implementation, release, protocol redesign, README rewrite, and historical cleanup out of scope.
+
 ### Next Action
 
-Perform the first-user readiness check and identify the exact next manual test.
+Have one uncoached first-time visitor start from `README.md`, complete the 15-minute trial on a real bounded task, and save a scored copy of `tests/user-trial-result-template.md`.
+
+### Stop
+
+Phase 7 is complete. Do not proceed to CLI, agents, automation, release creation, or new tasks.
 
 ---
 
