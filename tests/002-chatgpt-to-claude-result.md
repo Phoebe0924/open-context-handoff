@@ -1,5 +1,3 @@
----
-
 # OCH Test Result 002: ChatGPT → Claude
 
 Date: 2026-06-18
