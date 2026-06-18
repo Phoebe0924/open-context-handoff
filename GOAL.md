@@ -6,7 +6,7 @@ Make OCH understandable in 30 seconds and usable in 15 minutes by a first-time G
 
 ## Current Phase
 
-First-User Readiness — Phase 1 complete
+First-User Readiness — Phase 2 complete
 
 ## First-User Readiness Progress
 
@@ -24,9 +24,16 @@ First-User Readiness — Phase 1 complete
 - Identified entry-point ambiguity, V0/V1 wording noise, fragmented trial navigation, missing first-trial scoring, and missing troubleshooting as the main journey breaks.
 - Identified the README narrative, core principle, protocol specification, and historical V0 evidence as protected project soul.
 
+### Phase 2 — Start guide
+
+- Created `START_HERE.md`.
+- Reduced the first-use path to one purpose, one 15-minute outcome, and four practical steps.
+- Linked directly to the existing generator and receiver prompts.
+- Kept human review explicit and avoided adding new protocol claims.
+
 ### Next Action
 
-Create the short root-level `START_HERE.md` guide.
+Create the exact 15-minute trial and scoring guide.
 
 ---
 
